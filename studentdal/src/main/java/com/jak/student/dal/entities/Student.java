@@ -8,18 +8,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "studenttab")
+@Table(name="studenttab")
 public class Student {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
 	@Column(name = "sname")
-	private String name;
+	private String sname;
 	@Column(name = "scourse")
-	private String course;
+	private String scourse;
 	@Column(name = "sfee")
-	private Double fee;
+	private Double sfee;
 
 	public Long getId() {
 		return id;
@@ -29,33 +28,33 @@ public class Student {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getSname() {
+		return sname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setSname(String sname) {
+		this.sname = sname;
 	}
 
-	public String getCourse() {
-		return course;
+	public String getScourse() {
+		return scourse;
 	}
 
-	public void setCourse(String course) {
-		this.course = course;
+	public void setScourse(String scourse) {
+		this.scourse = scourse;
 	}
 
-	public Double getFee() {
-		return fee;
+	public double getSfee() {
+		return sfee;
 	}
 
-	public void setFee(Double fee) {
-		this.fee = fee;
+	public void setSfee(double sfee) {
+		this.sfee = sfee;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", course=" + course + ", fee=" + fee + "]";
+		return "Student [id=" + id + ", sname=" + sname + ", scourse=" + scourse + ", sfee=" + sfee + "]";
 	}
 
 }
