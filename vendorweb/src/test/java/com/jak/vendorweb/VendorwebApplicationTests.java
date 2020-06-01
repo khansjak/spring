@@ -1,4 +1,4 @@
-package com.jak.vendor;
+package com.jak.vendorweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
